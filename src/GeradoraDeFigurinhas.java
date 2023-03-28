@@ -16,8 +16,9 @@ public class GeradoraDeFigurinhas {
         // InputStream inputStream2 = new URL("https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX128_CR0,3,128,176_AL_.jpg").openStream();
         //leitura da imagem
         BufferedImage imagemOriginal = ImageIO.read(inputStream);
+        System.out.println(imagemOriginal);
 
-        //criar nova imagem em memócia com transparencia e tamanho novo
+        //criar nova imagem em memória com transparencia e tamanho novo
         var largura = imagemOriginal.getWidth();
         var altura = imagemOriginal.getHeight();
         int novaAltura = (int) ((int) altura * 1.2);
